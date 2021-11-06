@@ -28,7 +28,7 @@ body {overflow-x:hidden;}
 
 /*  HEADER  */
 
-.homepage header{background-color: rgb(0 0 0 / 64%);position: absolute;top: 0;width: 100%;border: none;}
+.homepage header{background-color: rgb(0 0 0 / 64%);position: absolute;top: 0;width: 100%;border: none;z-index: 999;}
 header .header-navigation li a{color: #201E1F;font-size: 14px;}
 #header-navigate.active li a{color: #fff;}
 .header-top-area .contact-us a{color: #201E1F;font-size: 13px;}
