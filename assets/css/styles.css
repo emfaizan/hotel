@@ -197,8 +197,8 @@ footer .footer-box h4{color: #fff;font-size: 13px;display: none;padding-bottom: 
     h3{font-size: 28px;}
     p{font-size: 14px;}
 
-    header .header-top-area .toggle{display: block;}
-    header .header-top-area .search{display: block;}
+    header .header-top-area .toggle{display: block;padding: 10px 0;background: red;}
+    header .header-top-area .search{display: block;padding: 10px;background: blue;}
     header .header-top-area .contact-us{display: none;}
     header .header-top-area .actions{display: none;}
     #header-navigate .navigation-list{background: #201E1F;width: 440px;min-width: 440px;position: fixed;top: 0px;left: -440px;bottom: 0px;opacity: 0;transition: all 0.3s ease-in-out;}
