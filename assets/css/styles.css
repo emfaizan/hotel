@@ -52,9 +52,9 @@ header .header-navigation .header-contacts{display: none;}
 /*  HEADER  */
 
 /*  SEARCH POPUP  */
-.search-popup {}
-.search-popup .popup-content{background: #201E1F;position: fixed;top: -100%;left: 0px;bottom: 0px;opacity: 0;transition: all 0.3s ease-in-out;height: 100vh;right: 0;padding: 25px 60px;text-align: center;max-width: 100vw;}
-.search-popup.active .popup-content{display:block;opacity: 1;transition: all 0.3s ease-in-out 0s;left: 0px;z-index: 11;overflow-y: auto;top: 0;}
+.search-popup {position:relative; z-index:9999}
+.search-popup .popup-content{background: #201E1F;position: fixed;top: -100%;left: 0px;bottom: 0px;opacity: 0;transition: all 0.3s ease-in-out;height: 100vh;right: 0;padding: 25px 60px;text-align: center;max-width: 100vw;visibility: hidden;}
+.search-popup.active .popup-content{display:block;opacity: 1;transition: all 0.3s ease-in-out 0s;left: 0px;z-index: 11;overflow-y: auto;top: 0;visibility: visible;}
 .search-popup .popup-content .cancel{display: flex;justify-content: flex-end;cursor: pointer;}
 .search-popup .search-area{position: relative;height: 58px;margin-top: 55px;}
 .search-popup .search-area .search{position: absolute;left: 20px;top: 50%;transform: translateY(-50%);}
