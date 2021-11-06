@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+
+    <!--FONT FAMILY-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     
+    <!--MAIN JS-->
+    
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</head>
+<body id="noscroll" class="homepage">
+
+<!-- HEADER START--->
+<header>
+    <div class="container">
+        <div class="header-top-area">
+            <div class="contact-us">
+                <a href="/">ABOUT US <img src="assets/img/arrow-header.png" alt=""></a>
+                <a href="/">CONTACT US <img src="assets/img/arrow-header.png" alt=""></a>
+            </div>
+            <div class="toggle" id="menuToggle">
+                <img src="assets/img/toggle.svg" alt="">
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="actions">
+                <a href="/" class="header-btn">MANAGE <br> RESERVATION</a>
+                <a href="/" class="header-btn">BOOK NOW</a>
+            </div>
+            <div class="search" id="searchToggle">
+                <img src="assets/img/search.svg" alt="">
+            </div>
+        </div>
+        <div class="header-navigation" id="header-navigate">
+            <div class="navigation-list">
+                <div class="flex-area">
+                    <a href="index.html" class="logo">
+                        <img src="assets/img/logo.png" alt="">
+                    </a>
+                    <div class="cancel" id="menuClose">
+                        <img src="assets/img/Close.png" alt="">
+                    </div>
+                </div>
+                <ul class="nav justify-content-center">
+                    <li><a href="/" class="nav-link">ROOMS & AMENITIES</a></li>
+                    <li><a href="/" class="nav-link">DINING & ENTERTAINMENT</a></li>
+                    <li><a href="/" class="nav-link">MEETINGS & EVENTS</a></li>
+                    <li><a href="/" class="nav-link">RECREATION FACILITIES</a></li>
+                    <li><a href="/" class="nav-link">SPA & SALONS</a></li>
+                    <li><a href="/" class="nav-link">SPECIAL OFFERS </a></li>
+                </ul>
+                <div class="header-contacts">
+                    <div class="findus">
+                        <h4>FIND US</h4>
+                        <p>P.O. Box 1412,<br>Manama,<br>Kingdom of Bahrain</p>
+                        <a href="">Get Direction</a>
+                    </div>
+                    <div class="contactus mt-5">
+                        <h4>CONTACT US</h4>
+                        <p>Email: info@thekhotel.com <br>Tel: +973 1736 0000<br> Fax: +973 1736 0000</p>
+                        <a href="">Get Direction</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- HEADER END--->
+
+<!--SEARCH POPUP-->
+<section class="search-popup" id="search-popup">
+    <div class="popup-content">
+        <div class="cancel" id="searchClose">
+            <img src="assets/img/Close.png" alt="">
+        </div>
+        <div class="popup-body">
+            <div class="search-area">
+                <img src="assets/img/mini-search.png" alt="" class="search"> <input type="text" name="" id="" class="form-control"><img src="assets/img/cancel-sm.png" alt="" class="cancel">
+            </div>
+            <div class="info">
+                <h4>KEYWORDS SUGGESTED FOR YOU</h4>
+                <div class="meta">
+                    <span> The Hotel </span> <span> Accomodation </span>  <span> Offers Dinning </span>  <span> Events Wedding Meetings</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--SEARCH POPUP-->
+
+<!---HOMEPAGE-BANNER--->
+<section class="homepage-banner" style="background-image: url(assets/img/banner.png);">
+    <div class="banner-content">
+        <h1>The ideal place to stay in Bahrain <br> whether it is for business or leisure </h1>
+    </div>
+</section>
+<!---HOMEPAGE-BANNER--->
+
+<!--- STAY WITH US -->
+<section class="stay-withus">
+    <div class="container">
+        <div class="top-heading">
+            <h2>The K Hotel situated in the heart of Juffair, close to Al-Shabab Avenue.<br>The ideal place to stay in Bahrain whether it is for business or leisure <br> travel, a 15 minutes’ drive to the Bahrain International Airport and offers.</h2>
+            <div class="info text-center mt-5 d-md-none d-block">
+                <h3>Stay with us</h3>
+                <p>It is a long established fact that a reader will be <br>distracted by the readable content of a page.</p>
+            </div>
+        </div>
+        <div class="stay-withus-wrapper">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="picture">
+                        <img src="assets/img/stay-withus.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="details">
+                        <div class="info">
+                            <h3>Stay with us</h3>
+                            <p>It is a long established fact that a reader will be <br>distracted by the readable content of a page.</p>
+                        </div>
+                        <div class="features">
+                            <span class="meta">Deluxe Single Room</span>
+                            <span class="meta">Deluxe Twin Room</span>
+                            <span class="meta">Amiri Suite</span>
+                            <span class="meta">Senior Suite (2 bedrooms)</span>
+                        </div>
+                        <div class="actions">
+                            <a href="" class="custom-btn-1">VIEW ALL ROOMS & SUITES</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--- STAY WITH US -->
+
+
+<!--- SLIDER SECTION  -->
+<section class="slider-section">
+    <div class="slider-main-hotel" id="homepageGallery">
+        <div>
+            <a href="assets/img/slider-1.png"><img src="assets/img/slider-1.png" alt=""></a>
+        </div>
+        <div>
+            <a href="assets/img/slider-2.png"><img src="assets/img/slider-2.png" alt=""></a>
+        </div>
+        <div>
+            <a href="assets/img/slider-1.png"><img src="assets/img/slider-1.png" alt=""></a>
+        </div>
+        <div>
+            <a href="assets/img/slider-2.png"><img src="assets/img/slider-2.png" alt=""></a>
+        </div>
+    </div>
+    <div class="view-gallery">
+        <img src="assets/img/expand.svg" alt="Expand" height="36">
+        <span>View gallery</span>
+    </div>
+    <div class="slider-footer d-none d-lg-block">
+        <div class="container">
+            <div class="row justify-content-between py-3 mb-5">
+                <div class="col-12 col-md-auto">
+                    <div class="slide-count">
+                        <span class="count mr-4" id="galleryCount">1/4</span>
+                        <span class="caption">Restaurant Image</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-auto">
+                    <div class="slider-navigation d-flex">
+                        <div class="prev-slide mr-3 cursor-pointer">
+                            <svg id="Group_4024" data-name="Group 4024" xmlns="http://www.w3.org/2000/svg" width="36.23" height="11.2" viewBox="0 0 36.23 11.2">
+                                <path id="Path_1303" data-name="Path 1303" d="M3887.806,2926.8s-2.036,7.976,0,11.2c-7.636-5.091-7.806-5.77-7.806-5.77Z" transform="translate(-3880 -2926.8)"/>
+                                <line id="Line_218" data-name="Line 218" x2="29.697" transform="translate(6.533 5.685)" fill="none" stroke="#000" stroke-width="2"/>
+                            </svg>
+                        </div>
+
+                        <div class="next-slide">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36.23" height="11.2" viewBox="0 0 36.23 11.2">
+                                <g id="Group_4023" data-name="Group 4023" transform="translate(-1384.5 -2908.8)">
+                                <path id="Path_1303" data-name="Path 1303" d="M3880,2926.8s2.036,7.976,0,11.2c7.637-5.091,7.806-5.77,7.806-5.77Z" transform="translate(-2467.075 -18)"/>
+                                <line id="Line_218" data-name="Line 218" x1="29.697" transform="translate(1384.5 2914.485)" fill="none" stroke="#000" stroke-width="2"/>
+                                </g>
+                            </svg>              
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--- SLIDER SECTION  -->
+
+<!--- DINE WITH US -->
+<section class="stay-withus dine-withus">
+    <div class="stay-withus-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="picture">
+                        <img src="assets/img/dine-withus.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="details">
+                        <div class="info">
+                            <h3>Dine with us</h3>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  The point of using Lorem Ipsum is that it has a more-or-less  normal distribution of letters, as opposed to using ‘Content  here, content here’, making it look like readable English. Many desktop publishing packages and web page editors.</p>
+                        </div>
+                        <div class="actions">
+                            <a href="" class="custom-btn">VIEW ALL RESTAURANTS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--- DINE WITH US -->
+
+<!--- FACILITIES -->
+<section class="facilities" style="background-image: url(assets/img/facilities.png);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="heading">
+                    <h3>Relax and revive <br>with  K Hotel <br>facilities</h3>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="deatils">
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  The point of using Lorem Ipsum is that it has a more-or-less  normal distribution of letters, as opposed to using ‘Content  here, content here’, making it look like readable English.</p>
+                    <div class="actions">
+                        <a href="" class="custom-btn">VIEW ALL RESTAURANTS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--- FACILITIES -->
+
+<!-- SPECIAL OFFERS -->
+<section class="special-offers">
+    <div class="container">
+        <div class="top-heading">
+            <h3>Special Offers</h3>
+        </div>
+        <div class="special-offer-slider">
+            <div>
+                <div class="slider-box">
+                    <div class="picture">
+                        <img src="assets/img/offer-slider1.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h2>Be Trendy (Champions)</h2>
+                        <p>Treat your special teachers. Choose 2 treatments of 4 and receive complimentary access of thermal facilities</p>
+                        <div class="actions">
+                            <a href="">EXPLORE MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="slider-box">
+                    <div class="picture">
+                        <img src="assets/img/offer-slider2.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h2>Breakfast</h2>
+                        <p>Tap into wide range of noodle varieties and  preparations from Thailand.</p>
+                        <div class="actions">
+                            <a href="">EXPLORE MORE</a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div>
+                <div class="slider-box">
+                    <div class="picture">
+                        <img src="assets/img/offer-slider3.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h2>Cheese Wine</h2>
+                        <p>Start the New Year with a little sneak peak of Fusions by Tala at Gulf Hotel Bahrain and explore what is new.</p>
+                        <div class="actions">
+                            <a href="">EXPLORE MORE</a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div>
+                <div class="slider-box">
+                    <div class="picture">
+                        <img src="assets/img/offer-slider1.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h2>Be Trendy (Champions)</h2>
+                        <p>Treat your special teachers. Choose 2 treatments of 4 and receive complimentary access of thermal facilities</p>
+                        <div class="actions">
+                            <a href="">EXPLORE MORE</a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div>
+                <div class="slider-box">
+                    <div class="picture">
+                        <img src="assets/img/offer-slider1.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h2>Be Trendy (Champions)</h2>
+                        <p>Treat your special teachers. Choose 2 treatments of 4 and receive complimentary access of thermal facilities</p>
+                        <div class="actions">
+                            <a href="">EXPLORE MORE</a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div>
+                <div class="slider-box">
+                    <div class="picture">
+                        <img src="assets/img/offer-slider1.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h2>Be Trendy (Champions)</h2>
+                        <p>Treat your special teachers. Choose 2 treatments of 4 and receive complimentary access of thermal facilities</p>
+                        <div class="actions">
+                            <a href="">EXPLORE MORE</a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="slider-control">
+            <div class="prev">
+                <img src="assets/img/left-arrow.png" alt="">
+            </div>
+            <div class="next">
+                <img src="assets/img/right-arrow.png" alt="">
+            </div>
+        </div> 
+    </div>
+</section>
+<!-- SPECIAL OFFERS -->
+
+<!-- FOOTER  -->
+<footer>
+    <div class="footer-top-heading">
+        <h3>Sign up for special offers and promotions <img src="assets/img/arrow-header.png" alt=""></h3>
+    </div>
+    <div class="footer-bootom-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="footer-logo">
+                                <a href="index.html" class="logo">
+                                    <img src="assets/img/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="footer-box">
+                            <h4>RESERVATION</h4>
+                                <ul>
+                                    <li> <p>P.O. Box 1412, Manama, <br>Kingdom of Bahrain</p></li>
+                                    <li> <p>info@thekhotel.com <br> +973 1736 0000</p></li>
+                                    <span class="d-flex social-icons">
+                                        <li><a href=""> <img src="assets/img/facebook.png" alt=""> </a></li>
+                                        <li> <a href=""> <img src="assets/img/twitter.png" alt=""> </a></li>
+                                        <li><a href=""> <img src="assets/img/instagram.png" alt=""> </a></li>
+                                    </span>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="footer-list-items">
+                                <div class="footer-box">
+                                    <h4>GENERAL</h4>
+                                    <ul>
+                                        <li><a href="">Rooms & Amenities</a></li>
+                                        <li><a href="">Dining & Entertainment</a></li>
+                                        <li><a href="">Special Offers</a></li>
+                                        <li><a href="">Meetings & Events</a></li>
+                                        <li><a href="">Recreation Facilities</a></li>
+                                        <li><a href="">Spa & Salons</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="footer-list-items">
+                                <div class="footer-box">
+                                    <h4>SITEMAP</h4>
+                                    <ul>
+                                        <li><a href="">About Us</a></li>
+                                        <li><a href="">The K  Plus</a></li>
+                                        <li><a href="">Manage Reservation</a></li>
+                                        <li><a href="">Book now</a></li>
+                                        <li><a href="">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="go-to-top">
+                                <div class="go-top" id="gototop">
+                                    <img src="assets/img/top-arrow.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>All rights reserved © Copyright 2021. K Hotel</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- FOOTER  -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<script>
+    
+    $(document).ready(function(){
+        $('#gototop').click(function(){
+            $('html ,body').animate({scrollTop : 0},800);
+        });
+
+        $(document).on('click', '.footer-box h4', function(){
+            $(this).parent('.footer-box').toggleClass('active')
+        });
+        
+        $(document).on('click', '#menuToggle, #menuClose', function(){
+            $('#header-navigate').toggleClass('active');
+            $('#noscroll').toggleClass('active');
+        });
+        
+        $(document).on('click', '#searchClose', function(){
+            $('#search-popup').toggleClass('active');
+        });
+        
+        $(document).on('click', '#searchToggle', function(){
+            $('#search-popup').toggleClass('active');
+        });
+
+        $('#homepageGallery').slick({
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            prevArrow: $('.prev-slide'),
+            nextArrow: $('.next-slide'),
+            customPaging: function (slider, i) {
+                console.log("count", (i + 1) + '/' + slider.slideCount);
+                return  (i + 1) + '/' + slider.slideCount;
+            }
+        });
+
+        $('#homepageGallery').on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+            //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+            var i = (currentSlide ? currentSlide : 0) + 1;
+            $("#galleryCount").text(i + '/' + slick.slideCount);
+        });
+
+        $('#homepageGallery a').magnificPopup({
+            type: 'image',
+            gallery:{
+                enabled:true
+            }
+        });
+
+        $('.special-offer-slider').slick({
+            speed: 300,
+            prevArrow: $('.prev'),
+            nextArrow: $('.next'),
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            }, {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }, {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
+        });
+    });
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+
+    <!--FONT FAMILY-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     
+    <!--MAIN JS-->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body id="noscroll">
+
+    <!-- HEADER START--->
+
+    <header>
+        <div class="container">
+            <div class="header-top-area">
+                <div class="contact-us">
+                    <a href="/"> ABOUT US <img src="assets/img/listing-arrow.png" alt=""></a>
+                    <a href="/"> CONTACT US <img src="assets/img/listing-arrow.png" alt=""></a>
+                </div>
+                <div class="toggle" onclick="myNav()">
+                    <img src="assets/img/listing-toggle.svg" alt="">
+                </div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="actions">
+                    <a href="/" class="header-btn">MANAGE <br> RESERVATION</a>
+                    <a href="/" class="header-btn">BOOK NOW</a>
+                </div>
+                <div class="search" onclick="mySearch()">
+                    <img src="assets/img/listing-search.svg" alt="">
+                </div>
+            </div>
+            <div class="header-navigation" id="header-navigate">
+                <div class="navigation-list">
+                    <div class="flex-area">
+                        <a href="index.html" class="logo">
+                            <img src="assets/img/logo.png" alt="">
+                        </a>
+                        <div class="cancel">
+                            <img src="assets/img/Close.png" onclick="myNav()" alt="">
+                        </div>
+                    </div>
+                    <ul class="nav justify-content-center">
+                        <li><a href="/" class="nav-link">ROOMS & AMENITIES</a></li>
+                        <li><a href="/" class="nav-link">DINING & ENTERTAINMENT</a></li>
+                        <li><a href="/" class="nav-link">MEETINGS & EVENTS</a></li>
+                        <li><a href="/" class="nav-link">RECREATION FACILITIES</a></li>
+                        <li><a href="/" class="nav-link">SPA & SALONS</a></li>
+                        <li><a href="/" class="nav-link">SPECIAL OFFERS </a></li>
+                    </ul>
+                    <div class="header-contacts">
+                        <div class="findus">
+                            <h4>FIND US</h4>
+                            <p>P.O. Box 1412,<br>Manama,<br>Kingdom of Bahrain</p>
+                            <a href="">Get Direction</a>
+                        </div>
+                        <div class="contactus mt-5">
+                            <h4>CONTACT US</h4>
+                            <p>Email: info@thekhotel.com <br>Tel: +973 1736 0000<br> Fax: +973 1736 0000</p>
+                            <a href="">Get Direction</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HEADER END--->
+
+    <!--SEARCH POPUP-->
+
+    <section class="search-popup" id="search-popup">
+        <div class="popup-content">
+            <div class="cancel" onclick="mySearch()">
+                <img src="assets/img/Close.png" alt="">
+            </div>
+            <div class="popup-body">
+                <div class="search-area">
+                    <img src="assets/img/mini-search.png" alt="" class="search"> <input type="text" name="" id="" class="form-control"><img src="assets/img/cancel-sm.png" alt="" class="cancel">
+                </div>
+                <div class="info">
+                    <h4>KEYWORDS SUGGESTED FOR YOU</h4>
+                    <div class="meta">
+                        <span> The Hotel </span> <span> Accomodation </span>  <span> Offers Dinning </span>  <span> Events Wedding Meetings</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SEARCH POPUP-->
+
+    <!--PRODUCT LISTING-->
+
+    <section class="product-listing">
+        <div class="container">
+            <div class="listing-wrapper">
+                <div class="top-heading">
+                    <h1>Rooms and Suites</h1>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="listing-item">
+                            <div class="picture">
+                                <img src="assets/img/room1.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h2>Deluxe Single Room</h2>
+                                <p>Exquisitely designed for a very discerning traveller, feel the pampering touch when you stay in our Deluxe Room.</p>
+                                <div class="actions">
+                                    <a href="">EXPLORE MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="listing-item">
+                            <div class="picture">
+                                <img src="assets/img/room2.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h2>Deluxe Twin Room</h2>
+                                <p>Relish at the extravagant setup and be delighted to your core when you book our Senior Suite.</p>
+                                <div class="actions">
+                                    <a href="">EXPLORE MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="listing-item">
+                            <div class="picture">
+                                <img src="assets/img/room3.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h2>Amiri Suite</h2>
+                                <p>Lounge in the privacy of your own pool and be mesmerized with the sublime beauty of the Amiri Suite.</p>
+                                <div class="actions">
+                                    <a href="">EXPLORE MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="listing-item">
+                            <div class="picture">
+                                <img src="assets/img/room4.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h2>Senior Suite (2 bedrooms)</h2>
+                                <p>Boasting of style and grandeur, our Penthouse promises new heights of satisfaction living.</p>
+                                <div class="actions">
+                                    <a href="">EXPLORE MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="listing-item">
+                            <div class="picture">
+                                <img src="assets/img/room5.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h2>Family Suite (3 bedrooms)</h2>
+                                <p>The Diplomatic Suite is particularly popular with guests who wish to have a memorable and amazing experience.</p>
+                                <div class="actions">
+                                    <a href="">EXPLORE MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="listing-item">
+                            <div class="picture">
+                                <img src="assets/img/room6.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h2>Penthouse (2 bedrooms)</h2>
+                                <p>Bask in the remarkable arrangement and enter a room full of elegance when you experience our Family Suite.</p>
+                                <div class="actions">
+                                    <a href="">EXPLORE MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="listing-item">
+                            <div class="picture">
+                                <img src="assets/img/room7.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h2>Amiri Suite (2 bedrooms)</h2>
+                                <p>We spared no expense in the magnificent architecture of our Ambassador Suite.</p>
+                                <div class="actions">
+                                    <a href="">EXPLORE MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="listing-item">
+                            <div class="picture">
+                                <img src="assets/img/room8.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h2>Royal Suites (4 bedrooms)</h2>
+                                <p>Be elegantly surprised with the unique and lavish layout of our Junior Suite.</p>
+                                <div class="actions">
+                                    <a href="">EXPLORE MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--PRODUCT LISTING-->
+
+    <!--FOOTER-->
+
+    <footer>
+        <div class="footer-top-heading">
+            <h3>Sign up for special offers and promotions <img src="assets/img/arrow-header.png" alt=""></h3>
+        </div>
+        <div class="footer-bootom-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                       <div class="row">
+                           <div class="col-md-4">
+                                <div class="footer-logo">
+                                    <a href="index.html" class="logo">
+                                        <img src="assets/img/logo.png" alt="">
+                                    </a>
+                                </div>
+                           </div>
+                           <div class="col-md-8">
+                               <div class="footer-box">
+                                <h4>RESERVATION</h4>
+                                   <ul>
+                                        <li> <p>P.O. Box 1412, Manama, <br>Kingdom of Bahrain</p></li>
+                                        <li> <p>info@thekhotel.com <br> +973 1736 0000</p></li>
+                                        <span class="d-flex social-icons">
+                                            <li><a href=""> <img src="assets/img/facebook.png" alt=""> </a></li>
+                                            <li> <a href=""> <img src="assets/img/twitter.png" alt=""> </a></li>
+                                            <li><a href=""> <img src="assets/img/instagram.png" alt=""> </a></li>
+                                        </span>
+                                    </ul>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="footer-list-items">
+                                    <div class="footer-box">
+                                        <h4>GENERAL</h4>
+                                        <ul>
+                                            <li><a href="">Rooms & Amenities</a></li>
+                                            <li><a href="">Dining & Entertainment</a></li>
+                                            <li><a href="">Special Offers</a></li>
+                                            <li><a href="">Meetings & Events</a></li>
+                                            <li><a href="">Recreation Facilities</a></li>
+                                            <li><a href="">Spa & Salons</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="footer-list-items">
+                                    <div class="footer-box">
+                                        <h4>SITEMAP</h4>
+                                        <ul>
+                                            <li><a href="">About Us</a></li>
+                                            <li><a href="">The K  Plus</a></li>
+                                            <li><a href="">Manage Reservation</a></li>
+                                            <li><a href="">Book now</a></li>
+                                            <li><a href="">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="go-to-top">
+                                    <div class="go-top" id="gototop">
+                                       <img src="assets/img/top-arrow.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>All rights reserved © Copyright 2021. K Hotel</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--FOOTER-->
+
+</body>
+</html>
