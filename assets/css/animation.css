@@ -1,0 +1,4 @@
+/*  FOR ANIMATION  */
+
+.homepage-banner,.banner-content,.stay-withus .top-heading,.stay-withus .picture,.stay-withus .details,.slider-section,.facilities,.facilities .heading,.facilities .details,.special-offers,.item-1,.item-2,.item-3,.item-4,.item-4,.item-5,.item-6,.item-7,.item-8{opacity: 0;}
+.homepage-banner .animated,.banner-content .animated,.stay-withus .picture .animated,.stay-withus .details .animated,.slider-section .animated,.facilities .animated,.facilities .heading .animated,.facilities .details .animated,.special-offers .animated,.item-1 .animated,.item-2 .animated,.item-3 .animated,.item-4 .animated,.item-5 .animated,.item-6 .animated,.item-7 .animated,.item-8 .animated{opacity: 1 ;}

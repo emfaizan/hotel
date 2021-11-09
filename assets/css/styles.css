@@ -28,7 +28,7 @@ body {overflow-x:hidden;}
 
 /*  HEADER  */
 
-.homepage header{background-color: rgb(0 0 0 / 64%);position: absolute;top: 0;width: 100%;border: none;z-index: 999;}
+.homepage header{background-color: rgb(0 0 0 / 64%);position: absolute;top: 0;width: 100%;border: none;z-index: 99;}
 header .header-navigation li a{color: #201E1F;font-size: 14px;}
 #header-navigate.active li a{color: #fff;}
 .header-top-area .contact-us a{color: #201E1F;font-size: 13px;}
@@ -91,10 +91,11 @@ header .header-navigation .header-contacts{display: none;}
 
 /*  SLIDER SECTION  */
 .slider-section {position:relative;overflow:hidden;}
-.slider-section img{width: 100%;}
+.slider-section a img{width: 100vw;max-height: 500px;object-fit: cover;object-position: center;}
 .slider-section .view-gallery {position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);-webkit-transform:translate(-50%, -50%);pointer-events: none;color: white;text-align: center;}
 .slick-disabled {opacity:0.25;}
 .slick-arrow {cursor: pointer;}
+
 /*  SLIDER SECTION  */
 
 /*  DINE WITH US  */
@@ -124,7 +125,7 @@ header .header-navigation .header-contacts{display: none;}
 .special-offers .special-offer-slider h2{padding-top: 23px;padding-bottom: 19px;}
 .special-offers .special-offer-slider img{width: 100%;}
 .special-offers .special-offer-slider .picture{margin-left: 25px;}
-.special-offers .special-offer-slider p{color: #484848;}
+.special-offers .special-offer-slider p{color: #484848;height: 85px;}
 .special-offers .slider-control .prev{position: absolute;top: 50%;transform: translateY(-50%);left: 70px;cursor: pointer;}
 .special-offers .slider-control .next{position: absolute;top: 50%;transform: translateY(-50%);right: 70px;cursor: pointer;}
 .special-offers .special-offer-slider .actions a{color: #201E1F;font-size: 13px;border-bottom: 1px solid #201E1F;padding-bottom: 3px;display: inline-block;transition: 0.2s ease-out;}
@@ -134,8 +135,10 @@ header .header-navigation .header-contacts{display: none;}
 
 /*  FOOTER   */
 
-footer .footer-top-heading{background-color: #1C1C1C;padding-top: 71px;padding-bottom: 53px;text-align: center;color: #fff;}
-footer .footer-bootom-wrapper{background-color: #201E1F;padding-top: 61px;}
+footer .footer-top-heading{background-color: #1C1C1C;padding: 60px 0;color: #fff;position: relative;overflow: hidden;}
+footer .footer-top-heading h3{text-align: center;margin: 0;}
+footer .footer-top-heading .form-control {border: none;background-color: transparent;border-bottom: 1px solid #fff;box-shadow: none;color: #fff;border-radius:0px;}
+footer .footer-bootom-wrapper{background-color: #201E1F;padding-top: 80px;}
 footer .footer-bootom-wrapper p{color: #fff;margin-bottom: 25px;}
 footer .footer-bootom-wrapper .social-icons a{margin-right: 30px;}
 footer .footer-bootom-wrapper li a{color: #fff;font-size: 15px;font-weight: 400;margin-bottom: 12px;display: inline-block;transition: 0.2s ease-out;}
@@ -144,7 +147,29 @@ footer .footer-bootom-wrapper .copyright p{margin: 0;text-align: center;margin-t
 footer .footer-bootom-wrapper .go-top{width: 42px;border: 1px solid #fff; height: 40px;display: flex;justify-content: center;align-items: center;cursor: pointer;border-radius: 3px;}
 footer .footer-box h4{color: #fff;font-size: 13px;display: none;padding-bottom: 24px;padding-top: 28px;position: relative;cursor: pointer;}
 
+/* Footer Animation */
+footer .footer-top-heading {max-height:162px;transition: max-height .8s cubic-bezier(.76,.09,.215,1);transition-delay: 0s;}
+footer .footer-top-heading.active {max-height:410px;}
+footer .footer-top-heading .heading {position:relative; z-index: 9;}
+footer .footer-top-heading .heading h3 {width:100%;position:absolute;opacity: 1;transform: translateY(0);transition: opacity .8s cubic-bezier(.34,.615,.4,.985),transform .8s cubic-bezier(.34,.615,.4,.985);transition-duration: .4s;transition-delay: .6s;}
+footer .footer-top-heading.active .heading h3 {opacity: 0;transform: translateY(3rem);transition: opacity .6s cubic-bezier(.65,.025,.67,.36),transform .6s cubic-bezier(.65,.025,.67,.36);transition-duration: .4s;transition-delay: 0s;}
+footer .footer-contact-box label{display: block;font-size: 24px;}
+footer .footer-contact-box{background-color: #1c1c1c;pointer-events: none;position: relative;text-align: left;z-index: 5;opacity:0;transform: translateY(3rem);transition: opacity .6s cubic-bezier(.65,.025,.67,.36),transform .6s cubic-bezier(.65,.025,.67,.36);transition-duration: .4s;}
+#footer-menu.active .footer-contact-box{pointer-events: all;opacity: 1;transform: translateY(0);transition: opacity .8s cubic-bezier(.34,.615,.4,.985),transform .8s cubic-bezier(.34,.615,.4,.985);}
+footer .footer-contact-box .cancel img{position: absolute;right: 0;top: 20px;}
+footer .footer-contact-box .actions a{padding: 20px 70px;color: #fff;border: 1px solid #fff;color: #fff;font-size: 14px;border-radius: 4px;margin: auto;display: inline-block;}
+
+
 /*  FOOTER   */
+
+/*  MOBILE FOOTER  */
+
+.mobile-footer{padding: 10px;position: fixed;bottom: 0;right: 0;left: 0;background-color: #fff;display: none;border: 1px solid #CCCCCC;}
+.mobile-footer .mobile-footer-con{display: flex;justify-content: space-between;text-align: center;}
+.mobile-footer .mobile-footer-con > div{display: flex;flex-direction: column;justify-content: center;align-items: center;width: 20%;}
+.mobile-footer h4{font-size: 8px;padding-top: 8px;color: #413F47;font-weight: 600;margin-bottom: 0;}
+.mobile-footer img{height: 30px;}
+.mobile-footer a{display: inline-block;}
 
 /*  LISTING PAGE START  */
 
@@ -251,6 +276,8 @@ footer .footer-box h4{color: #fff;font-size: 13px;display: none;padding-bottom: 
    footer .footer-box h4:after{content: "";width:10px;height:15px;background-image: url(../img/plus.svg);position: absolute;right: 0;background-position: center center;background-repeat: no-repeat;}
    footer .footer-box.active h4:after{content: "";width:10px;height:15px;background-image: url(../img/minus.svg);position: absolute;right: 0;background-position: center center;background-repeat: no-repeat;}
 
+   .mobile-footer{display: block;}
+   
    .slider-section > div.slider-main-hotel {margin:0 -25%; background:#000000; line-height: 0;}
    .slider-section > div.slider-main-hotel img {opacity:0.6}
 }
@@ -275,6 +302,7 @@ footer .footer-box h4{color: #fff;font-size: 13px;display: none;padding-bottom: 
     .special-offers .special-offer-slider .picture {width: 280px;margin: auto;}
     .special-offers .slider-control .prev {left: 20px;}
     .special-offers .slider-control .next {right: 20px;}
+    .special-offers .special-offer-slider p{height: auto;}
 
     .product-listing h1 {font-size: 22px;}
     .product-listing .row .actions a{font-size: 11px;}

@@ -10,6 +10,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 
@@ -17,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
      
     <!--MAIN JS-->
@@ -27,21 +29,23 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>        
 
 </head>
 <body id="noscroll">
 
     <!-- HEADER START--->
-
     <header>
         <div class="container">
             <div class="header-top-area">
                 <div class="contact-us">
-                    <a href="/"> ABOUT US <img src="assets/img/listing-arrow.png" alt=""></a>
-                    <a href="/"> CONTACT US <img src="assets/img/listing-arrow.png" alt=""></a>
+                    <a href="/">ABOUT US <img src="assets/img/listing-arrow.png" alt=""></a>
+                    <a href="/">CONTACT US <img src="assets/img/listing-arrow.png" alt=""></a>
                 </div>
-                <div class="toggle" onclick="myNav()">
-                    <img src="assets/img/listing-toggle.svg" alt="">
+                <div class="toggle">
+                    <a href="Javascript:void(0)" id="menuToggle">
+                        <img src="assets/img/listing-toggle.svg" alt="">
+                    </a>
                 </div>
                 <div class="logo">
                     <a href="index.html">
@@ -52,8 +56,10 @@
                     <a href="/" class="header-btn">MANAGE <br> RESERVATION</a>
                     <a href="/" class="header-btn">BOOK NOW</a>
                 </div>
-                <div class="search" onclick="mySearch()">
-                    <img src="assets/img/listing-search.svg" alt="">
+                <div class="search">
+                    <a href="Javascript:void(0)" id="searchToggle">
+                        <img src="assets/img/listing-search.svg" alt="">
+                    </a>
                 </div>
             </div>
             <div class="header-navigation" id="header-navigate">
@@ -62,8 +68,8 @@
                         <a href="index.html" class="logo">
                             <img src="assets/img/logo.png" alt="">
                         </a>
-                        <div class="cancel">
-                            <img src="assets/img/Close.png" onclick="myNav()" alt="">
+                        <div class="cancel" id="menuClose">
+                            <img src="assets/img/Close.png" alt="">
                         </div>
                     </div>
                     <ul class="nav justify-content-center">
@@ -91,14 +97,12 @@
             </div>
         </div>
     </header>
-
     <!-- HEADER END--->
 
     <!--SEARCH POPUP-->
-
     <section class="search-popup" id="search-popup">
         <div class="popup-content">
-            <div class="cancel" onclick="mySearch()">
+            <div class="cancel" id="searchClose">
                 <img src="assets/img/Close.png" alt="">
             </div>
             <div class="popup-body">
@@ -114,7 +118,6 @@
             </div>
         </div>
     </section>
-
     <!--SEARCH POPUP-->
 
     <!--PRODUCT LISTING-->
@@ -127,7 +130,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <div class="listing-item">
+                        <div class="listing-item item-1">
                             <div class="picture">
                                 <img src="assets/img/room1.png" alt="">
                             </div>
@@ -140,7 +143,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 item-2">
                         <div class="listing-item">
                             <div class="picture">
                                 <img src="assets/img/room2.png" alt="">
@@ -154,7 +157,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 item-3">
                         <div class="listing-item">
                             <div class="picture">
                                 <img src="assets/img/room3.png" alt="">
@@ -168,7 +171,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 item-4">
                         <div class="listing-item">
                             <div class="picture">
                                 <img src="assets/img/room4.png" alt="">
@@ -182,7 +185,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 item-5">
                         <div class="listing-item">
                             <div class="picture">
                                 <img src="assets/img/room5.png" alt="">
@@ -196,7 +199,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 item-6">
                         <div class="listing-item">
                             <div class="picture">
                                 <img src="assets/img/room6.png" alt="">
@@ -210,7 +213,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 item-7">
                         <div class="listing-item">
                             <div class="picture">
                                 <img src="assets/img/room7.png" alt="">
@@ -224,7 +227,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 item-8">
                         <div class="listing-item">
                             <div class="picture">
                                 <img src="assets/img/room8.png" alt="">
@@ -328,6 +331,131 @@
     </footer>
 
     <!--FOOTER-->
+
+    <!--MOBILE FOOTER-->
+
+    <section class="mobile-footer">
+        <div class="mobile-footer-con">
+            <div class="book-now">
+                <a href="/">
+                    <div class="picture">
+                        <img src="assets/img/book-now.svg" alt="">
+                    </div>
+                    <h4>Book Now</h4>
+                </a>
+            </div>
+            <div class="dining">
+                <a href="/">
+                    <div class="picture">
+                        <img src="assets/img/dining.svg" alt="">
+                    </div>
+                    <h4>Dininng</h4>
+                </a>
+            </div>
+            <div class="book-now">
+                <a href="/">
+                    <div class="picture">
+                        <img src="assets/img/offers.svg" alt="">
+                    </div>
+                    <h4>Offers</h4>
+                </a>
+            </div>
+            <div class="spa">
+                <a href="/">
+                    <div class="picture">
+                        <img src="assets/img/spa.svg" alt="">
+                    </div>
+                    <h4>Spa</h4>
+                </a>
+            </div>
+            <div class="contact">
+                <a href="/">
+                    <div class="picture">
+                        <img src="assets/img/contact.svg" alt="">
+                    </div>
+                    <h4>Contact Us</h4>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--MOBILE FOOTER-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
+
+    <script>
+    
+    
+        $(document).ready(function(){
+            $('#gototop').click(function(){
+                $('html ,body').animate({scrollTop : 0},800);
+            });
+    
+            $(document).on('click', '.footer-box h4', function(){
+                $(this).parent('.footer-box').toggleClass('active')
+            });
+            
+            $(document).on('click', '#menuToggle, #menuClose', function(){
+                $('#header-navigate').toggleClass('active');
+                $('#noscroll').toggleClass('active');
+            });
+            
+            $(document).on('click', '#searchClose', function(){
+                $('#search-popup').toggleClass('active');
+            });
+            
+            $(document).on('click', '#searchToggle', function(){
+                $('#search-popup').toggleClass('active');
+            });
+         
+            $('.item-1').waypoint(function(direction){
+            $('.item-1').addClass('animated fadeInLeft')
+            }, {
+                offset: '20%'
+            })
+
+            $('.item-2').waypoint(function(direction){
+            $('.item-2').addClass('animated fadeInRight')
+            }, {
+                offset: '20%'
+            })
+            $('.item-3').waypoint(function(direction){
+            $('.item-3').addClass('animated fadeInLeft')
+            }, {
+                offset: '20%'
+            })
+
+            $('.item-4').waypoint(function(direction){
+            $('.item-4').addClass('animated fadeInRight')
+            }, {
+                offset: '20%'
+            })
+            $('.item-5').waypoint(function(direction){
+            $('.item-5').addClass('animated fadeInLeft')
+            }, {
+                offset: '20%'
+            })
+
+            $('.item-6').waypoint(function(direction){
+            $('.item-6').addClass('animated fadeInRight')
+            }, {
+                offset: '20%'
+            })
+            $('.item-7').waypoint(function(direction){
+            $('.item-7').addClass('animated fadeInLeft')
+            }, {
+                offset: '20%'
+            })
+
+            $('.item-8').waypoint(function(direction){
+            $('.item-8').addClass('animated fadeInRight')
+            }, {
+                offset: '20%'
+            })
+        });
+
+    
+    </script>
 
 </body>
 </html>

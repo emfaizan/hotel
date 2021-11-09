@@ -10,6 +10,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 
@@ -20,6 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
     
     <!-- jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
      
     <!--MAIN JS-->
@@ -29,7 +31,7 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>        
 
 </head>
 <body id="noscroll" class="homepage">
@@ -191,7 +193,7 @@
     </div>
     <div class="slider-footer d-none d-lg-block">
         <div class="container">
-            <div class="row justify-content-between py-3 mb-5">
+            <div class="row justify-content-between py-3">
                 <div class="col-12 col-md-auto">
                     <div class="slide-count">
                         <span class="count mr-4" id="galleryCount">1/4</span>
@@ -260,7 +262,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="deatils">
+                <div class="details">
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  The point of using Lorem Ipsum is that it has a more-or-less  normal distribution of letters, as opposed to using ‘Content  here, content here’, making it look like readable English.</p>
                     <div class="actions">
                         <a href="" class="custom-btn">VIEW ALL RESTAURANTS</a>
@@ -366,10 +368,10 @@
         </div>
         <div class="slider-control">
             <div class="prev">
-                <img src="assets/img/left-arrow.png" alt="">
+                <img src="assets/img/left-arrow.svg" alt="">
             </div>
             <div class="next">
-                <img src="assets/img/right-arrow.png" alt="">
+                <img src="assets/img/right-arrow.svg" alt="">
             </div>
         </div> 
     </div>
@@ -378,8 +380,58 @@
 
 <!-- FOOTER  -->
 <footer>
-    <div class="footer-top-heading">
-        <h3>Sign up for special offers and promotions <img src="assets/img/arrow-header.png" alt=""></h3>
+    <div class="footer-top-heading" id="footer-menu" style="position: relative;">
+        <div class="heading">
+            <h3>Sign up for special offers and promotions <img src="assets/img/arrow-header.png" alt=""></h3>
+        </div>
+        <div class="footer-contact-box">
+           <div class="container position-relative">
+               <div class="row">
+                   <div class="col-lg-4">
+                       <div class="form-group mb-5">
+                           <label for="">First name*</label>
+                           <input type="text" name="" id="" class="form-control" placeholder="First Name">
+                       </div>
+                   </div>
+                   <div class="col-lg-4">
+                        <div class="form-group mb-5">
+                            <label for="">Last name*</label>
+                            <input type="text" name="" id="" class="form-control" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group mb-5">
+                            <label for="">Email Address*</label>
+                            <input type="text" name="" id="" class="form-control" placeholder="First Name">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group mb-5">
+                            <label for="">Address*</label>
+                            <input type="text" name="" id="" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group mb-5">
+                            <label for="">First name*</label>
+                            <input type="text" name="" id="" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group mb-5">
+                            <label for="">First name*</label>
+                            <input type="text" name="" id="" class="form-control">
+                        </div>
+                    </div>
+                     <div class="actions w-100 d-flex justify-content-center">
+                         <a href="/">SIGN UP</a>
+                     </div>
+               </div>
+               <div class="cancel" id="footer-menu-close">
+                    <img src="assets/img/Close.png" alt="">
+               </div>
+           </div>
+       </div>
     </div>
     <div class="footer-bootom-wrapper">
         <div class="container">
@@ -458,9 +510,59 @@
 </footer>
 <!-- FOOTER  -->
 
+<!--MOBILE FOOTER-->
+
+<section class="mobile-footer">
+    <div class="mobile-footer-con">
+        <div class="book-now">
+            <a href="/">
+                <div class="picture">
+                    <img src="assets/img/book-now.svg" alt="">
+                </div>
+                <h4>Book Now</h4>
+            </a>
+        </div>
+        <div class="dining">
+            <a href="/">
+                <div class="picture">
+                    <img src="assets/img/dining.svg" alt="">
+                </div>
+                <h4>Dininng</h4>
+            </a>
+        </div>
+        <div class="book-now">
+            <a href="/">
+                <div class="picture">
+                    <img src="assets/img/offers.svg" alt="">
+                </div>
+                <h4>Offers</h4>
+            </a>
+        </div>
+        <div class="spa">
+            <a href="/">
+                <div class="picture">
+                    <img src="assets/img/spa.svg" alt="">
+                </div>
+                <h4>Spa</h4>
+            </a>
+        </div>
+        <div class="contact">
+            <a href="/">
+                <div class="picture">
+                    <img src="assets/img/contact.svg" alt="">
+                </div>
+                <h4>Contact Us</h4>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!--MOBILE FOOTER-->
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
 
 <script>
     
@@ -485,6 +587,11 @@
         $(document).on('click', '#searchToggle', function(){
             $('#search-popup').toggleClass('active');
         });
+
+        $(document).on('click', '#footer-menu h3, #footer-menu-close', function(){
+            $('#footer-menu').toggleClass('active');
+        });
+
 
         $('#homepageGallery').slick({
             infinite: false,
@@ -537,7 +644,63 @@
                 }
             }]
         });
+    
+
+         $('.homepage-banner').waypoint(function(direction){
+            $('.homepage-banner').addClass('animated fadeInRight')
+        }, {
+            offset: '10%'
+        })
+        $('.banner-content').waypoint(function(direction){
+            $('.banner-content').addClass('animated zoomIn')
+        }, {
+            offset: '50%'
+        })
+        $('.stay-withus .top-heading').waypoint(function(direction){
+            $('.stay-withus .top-heading').addClass('animated fadeInDownBig')
+        }, {
+            offset: '100%'
+        })
+        $('.stay-withus .picture').waypoint(function(direction){
+            $('.stay-withus .picture').addClass('animated fadeInLeft')
+        }, {
+            offset: '50%'
+        })
+        $('.stay-withus .details').waypoint(function(direction){
+            $('.stay-withus .details').addClass('animated fadeInRight')
+        }, {
+            offset: '50%'
+        })
+        $('.slider-section').waypoint(function(direction){
+            $('.slider-section').addClass('animated fadeInDownBig')
+        }, {
+            offset: '50%'
+        })
+        $('.facilities').waypoint(function(direction){
+            $('.facilities').addClass('animated fadeIn')
+        }, {
+            offset: '50%'
+        })
+        $('.facilities .heading').waypoint(function(direction){
+            $('.facilities .heading').addClass('animated fadeInLeft')
+        }, {
+            offset: '50%'
+        })
+        $('.facilities .details').waypoint(function(direction){
+            $('.facilities .details').addClass('animated fadeInRight')
+        }, {
+            offset: '50%'
+        })
+        $('.special-offers').waypoint(function(direction){
+            $('.special-offers').addClass('animated fadeIn')
+        }, {
+            offset: '50%'
+        })
+        
+                            
     });
+
+    
 
 </script>
 
