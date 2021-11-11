@@ -595,7 +595,8 @@
         });
         
         $(document).on('click', '#footer-menu-close', function(){
-            $('#footer-menu').css("maxHeight", 1)
+            $('#footer-menu').removeAttr("style");
+            $('#footer-menu').css("position", "relative");
             $('#footer-menu').toggleClass('active');
         });
 
