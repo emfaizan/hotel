@@ -152,7 +152,7 @@ footer .footer-top-heading {max-height:162px;transition: max-height .8s cubic-be
 footer .footer-top-heading.active {max-height:410px;}
 footer .footer-top-heading .heading {position:relative; z-index: 9;}
 footer .footer-top-heading .heading h3 {width:100%;position:absolute;opacity: 1;transform: translateY(0);transition: opacity .8s cubic-bezier(.34,.615,.4,.985),transform .8s cubic-bezier(.34,.615,.4,.985);transition-duration: .4s;transition-delay: .6s;}
-footer .footer-top-heading.active .heading h3 {opacity: 0;transform: translateY(3rem);transition: opacity .6s cubic-bezier(.65,.025,.67,.36),transform .6s cubic-bezier(.65,.025,.67,.36);transition-duration: .4s;transition-delay: 0s;}
+footer .footer-top-heading.active .heading h3 {pointer-events:none;opacity: 0;transform: translateY(3rem);transition: opacity .6s cubic-bezier(.65,.025,.67,.36),transform .6s cubic-bezier(.65,.025,.67,.36);transition-duration: .4s;transition-delay: 0s;}
 footer .footer-contact-box label{display: block;font-size: 24px;}
 footer .footer-contact-box{background-color: #1c1c1c;pointer-events: none;position: relative;text-align: left;z-index: 5;opacity:0;transform: translateY(3rem);transition: opacity .6s cubic-bezier(.65,.025,.67,.36),transform .6s cubic-bezier(.65,.025,.67,.36);transition-duration: .4s;}
 #footer-menu.active .footer-contact-box{pointer-events: all;opacity: 1;transform: translateY(0);transition: opacity .8s cubic-bezier(.34,.615,.4,.985),transform .8s cubic-bezier(.34,.615,.4,.985);}
