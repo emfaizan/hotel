@@ -588,9 +588,14 @@
             $('#search-popup').toggleClass('active');
         });
 
-        $(document).on('click', '#footer-menu h3, #footer-menu-close', function(){
+        $(document).on('click', '#footer-menu h3', function(){
             var formHeight = $('.footer-contact-box').height();
             $('#footer-menu').css("maxHeight", formHeight+120)
+            $('#footer-menu').toggleClass('active');
+        });
+        
+        $(document).on('click', '#footer-menu-close', function(){
+            $('#footer-menu').css("maxHeight", 1)
             $('#footer-menu').toggleClass('active');
         });
 
