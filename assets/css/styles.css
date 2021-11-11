@@ -279,7 +279,7 @@ footer .footer-contact-box .actions a{padding: 20px 70px;color: #fff;border: 1px
    .mobile-footer{display: block;}
    
    .slider-section > div.slider-main-hotel {margin:0 -25%; background:#000000; line-height: 0;}
-   .slider-section > div.slider-main-hotel img {opacity:0.6}
+   .slider-section > div.slider-main-hotel img {opacity:0.6;width:auto;}
 }
 
 @media(max-width:576px){
