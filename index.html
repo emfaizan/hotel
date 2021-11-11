@@ -589,6 +589,8 @@
         });
 
         $(document).on('click', '#footer-menu h3, #footer-menu-close', function(){
+            var formHeight = $('.footer-contact-box').height();
+            $('#footer-menu').css("maxHeight", formHeight)
             $('#footer-menu').toggleClass('active');
         });
 
